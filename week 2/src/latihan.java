@@ -22,8 +22,8 @@ public class latihan {
         System.out.println("Usia Anda: " + age);
         System.out.println("Tinggi badan Anda: " + height);
 
-        int hasilAritmatika = (age * 2) + (10 / 5) - 3;
-        System.out.println("\nHasil perhitungan (usia * 2) + 10/5 - 3: " + hasilAritmatika);
+        int hasilAritmatika = (age + 5) * (4 / 2) - 1;
+        System.out.println("\nHasil perhitungan (usia + 5) * (4 / 2) - 1: " + hasilAritmatika);
 
         boolean isAdult = age > 18;
         System.out.println("Apakah usia lebih dari 18? " + isAdult);
