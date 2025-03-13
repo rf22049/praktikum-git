@@ -6,20 +6,19 @@ public class latihan2{
         System.out.print("Masukkan kalimat: ");
         String kalimat = input.nextLine();
 
-        int jumlahKalimat = kalimat.length();
 
         int jumlahVokal = 0;
-        for (i = 0; i < kalimat.length(); i++){
+        for (int i = 0; i < kalimat.length(); i++){
             char huruf = kalimat.charAt(i);
 
-            if (huruf == 'a' || huruf == 'e' || huruf == 'i' || huruf == 'o' || huruf 'u'){
+            if (huruf == 'a' || huruf == 'e' || huruf == 'i' || huruf == 'o' || huruf == 'u'){
                 jumlahVokal++;
             }
         }
 
         System.out.println("Jumlah huruf vokal dalam kalimat: " + jumlahVokal);
 
-        switch(jumlahKalimat % 2){
+        switch(jumlahVokal % 2){
             case 1:
             System.out.println("Jumlah vokal ganjil");
             break;
@@ -30,9 +29,10 @@ public class latihan2{
             break;
         }
 
-        String kalimatArray[] = kalimat;
-        for (f = jumlahVokal + 1; i > jumlahVokal; f--){
-            System.out.println("karakter =" + jumlahVokal[f]);
+        char kalimatArray[] = kalimat.toCharArray();
+
+        for (int i = kalimatArray.length; i >=0; i--){
+            System.out.println("karakter = " + kalimatArray[i]);
         }
 
 
