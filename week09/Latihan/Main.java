@@ -3,20 +3,20 @@ package week09.Latihan;
 class Animal{
     HealthRecord healthRecord = new HealthRecord();
     void makeSound(){
-        System.out.println("Animal makes sound");
+        System.out.println("Suara");
     }
     
 }
 
 class Dog extends Animal{
     void makeSound(){
-        System.out.println("Dog barks");
+        System.out.println("Guguk");
     }
 }
 
 class Cat extends Animal{
     void makeSound(){
-        System.out.println("Cat meows");
+        System.out.println("Meow");
     }
 }
 
